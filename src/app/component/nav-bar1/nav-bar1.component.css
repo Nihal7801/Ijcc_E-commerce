@@ -10,8 +10,8 @@ body {
   display: flex;
   align-items: center;      /* Vertically center items */
   justify-content: space-between;
-  background: #bc002d;
-  color: white;
+  background:lightblue;
+  color:black;
   padding: 15px;
   margin-top: -8px;
   margin-left: -8px;
@@ -31,12 +31,12 @@ body {
   width: 60px;
   margin-right: 15px;
 }
-
 .logo img {
   height: 100%;
   width: auto;
   background: transparent;
   display: block;
+
 }
 
 /* Search */
@@ -79,7 +79,7 @@ body {
 }
 
 .menu a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 

@@ -65,11 +65,11 @@ export const UNEAKO_PRODUCT = [
     imgFront: "",
     imgBack: "",
     images: [
-      // "assets/images/Uneko_Images/jute_bag1/jute_mainpic.webp",
-      // "assets/images/Uneko_Images/jute_bag1/jute1.webp",
-      // "assets/images/Uneko_Images/jute_bag1/jute2.webp",
-      // "assets/images/Uneko_Images/jute_bag1/jute3.webp",
-      // "assets/images/Uneko_Images/jute_bag1/jute4.webp",
+      "assets/images/Uneko_Images/jute_bag1/jute_mainpic.webp",
+      "assets/images/Uneko_Images/jute_bag1/jute1.webp",
+      "assets/images/Uneko_Images/jute_bag1/jute2.webp",
+      "assets/images/Uneko_Images/jute_bag1/jute3.webp",
+      "assets/images/Uneko_Images/jute_bag1/jute4.webp",
     ],
     price: {
       old: 200,
