@@ -62,8 +62,8 @@ export const UNEAKO_PRODUCT = [
     brand: "UNEAKO",
     title: "Uneako Combo handbag",
     description: "An ideal climate positive alternative for the plastic file folders, taking care of the sustainable office utility goal of your brand. This file folder of 30*22 cm dimensions comes with a unique impacting message and also has a spline to hold a good number of pages.",
-    imgFront: "",
-    imgBack: "",
+    imgFront: "assets/images/Uneko_Images/jute_bag1/jute_mainpic.webp",
+    imgBack: "assets/images/Uneko_Images/jute_bag1/jute1.webp",
     images: [
       "assets/images/Uneko_Images/jute_bag1/jute_mainpic.webp",
       "assets/images/Uneko_Images/jute_bag1/jute1.webp",
