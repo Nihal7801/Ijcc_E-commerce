@@ -8,7 +8,7 @@
       // price: 'From ₹19,999'
     },
     {
-      image: 'assets/images/Havior.png',
+      image: 'assets/images/Hevior_Heading.png',
       title: 'Hemp Care Paradigam',
       subtitle: 'The Ultimate Skin Comfort with Hemp',
       // description: 'Super Retina Display',
@@ -22,7 +22,7 @@
       // price: 'From ₹34,999'
     },
      {
-      image: 'assets/images/Havior_pack.png',
+      image: 'assets/images/Hevior_combo_HD.png',
       // title: 'Climate Positive Products',
       // subtitle: 'Make plant happy',
       // description: 'OnePlus 12R 5G',
@@ -136,7 +136,7 @@
     },
     {
       id: 11,
-      name: "Ecofriendly conference pad with tulsi seeds infused in it’s cover page, And 16 perforated recycled pages inside Also for a better writing experience.",
+      name: "Ecofriendly conference pad with tulsi seeds infused in its cover page, And 16 perforated recycled pages inside Also for a better writing experience.",
       price: 449,
       oldPrice: 1249,
       image: "assets/images/Uneko_Images/conference_pad_Pack/2.webp",

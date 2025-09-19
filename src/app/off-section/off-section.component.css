@@ -1,6 +1,3 @@
-
-
-
 /* Promo Section Layout */
 .promo-section {
   display: grid;
@@ -13,24 +10,41 @@
 
 /* Banner Style */
 .promo-banner {
-  /* background: linear-gradient(135deg, #ff6a3d, #ff3d7a); */
-  background-image: url("https://images.unsplash.com/photo-1512436991641-6745cdb1723f?utm_source=chatgpt.com");
+  background-image: url("../../assets/images/Hevior_combo_HD.png");
+ /* product image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: #fff;
-  padding: 40px 24px;
+  padding: 60px 24px;
   border-radius: 16px;
   text-align: center;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
-.promo-banner,
-.promo-banner.alt {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+/* Overlay for better text readability */
+.promo-banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4); /* dark overlay */
+  border-radius: 16px;
+}
+
+.promo-banner h2,
+.promo-banner p,
+.promo-banner .promo-btn {
+  position: relative; /* sit above overlay */
+  z-index: 1;
 }
 
 .promo-banner.alt {
-  background-image: url("https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1200&q=80");
+ background-image: url("../../assets/images/Hevior_combo_HD.png");
 }
 
 .promo-banner h2 {
@@ -46,8 +60,8 @@
 .promo-btn {
   display: inline-block;
   padding: 12px 24px;
-  background: #fff;
-  color: #111;
+  background: #bc002d;
+  color: #fff;
   font-weight: 600;
   text-decoration: none;
   border-radius: 999px;
@@ -55,7 +69,7 @@
 }
 
 .promo-btn:hover {
-  background: #f1f1f1;
+  background: #111;
   transform: translateY(-2px);
 }
 
