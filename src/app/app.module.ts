@@ -18,7 +18,7 @@ import { ReviewSectionComponent } from './component/review-section/review-sectio
 import { SignInComponent } from './component/sign-in/sign-in.component';
 import { UneakoComponent } from './ product/uneako/uneako.component';
 
-import { ProdctUneakoComponent } from './ product/prodct-uneako/prodct-uneako.component';
+import { ProdctUneakoComponent } from './ product/product-uneako/product-uneako.component';
 import { CommonModule } from '@angular/common';
 
 

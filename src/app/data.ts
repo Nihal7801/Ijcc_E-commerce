@@ -182,11 +182,11 @@
 
       {
       id: 1,
-      brand: "HIGH STAR",
-      title: "Women’s Shirt",
-      description: "Trendy oversized cotton shirt perfect for casual outings.Trendy oversized cotton shirt perfect for casual outings.Trendy oversized cotton shirt perfect for casual outings.Trendy oversized cotton shirt perfect for casual outings.Trendy oversized cotton shirt perfect for casual outings.Trendy oversized cotton shirt perfect for casual outings.",
-      imgFront: "https://uneako.com/wp-content/uploads/2024/04/1-11.webp",
-      imgBack: "assets/images/Kimchi Image/kimchijar1.png",
+      brand: "Uneako",
+      title: "Eco lingo jute coster(6 pcs)",
+      description: " Embrace sustainability with this set of 6 jute–cotton coasters. Washable, waterproof, and spill-absorbent, they’re perfect for everyday use. Each set comes in a natural cotton jute pouch with a coconut button, combining style with eco-conscious living.",
+      imgFront: "assets/images/Uneko_Images/Eco_lingo_coaster/1.webp",
+      imgBack: "assets/images/Uneko_Images/Eco_lingo_coaster/6.webp",
       images: [
         "https://uneako.com/wp-content/uploads/2024/04/1-11.webp",
         "assets/images/kimchibowl.png",
@@ -200,12 +200,12 @@
       },
       rating: 4,
       reviews: 600,
-      colors: [
-        { name: "White", image: "assets/images/logo.jpeg" },
-        { name: "Blue", image: "assets/images/logo.jpeg" },
-        { name: "Red", image: "assets/images/logo.jpeg" }
-      ],
-      sizes: ["M", "L", "XL"],
+      // colors: [
+      //   { name: "White", image: "assets/images/logo.jpeg" },
+      //   { name: "Blue", image: "assets/images/logo.jpeg" },
+      //   { name: "Red", image: "assets/images/logo.jpeg" }
+      // ],
+      // sizes: ["M", "L", "XL"],
       delivery: {
         location: "Lucknow, India"
       },

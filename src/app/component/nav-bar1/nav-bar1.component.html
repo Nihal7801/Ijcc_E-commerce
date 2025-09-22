@@ -1,30 +1,47 @@
-<header class="navbar">
-  <!-- Left: Logo -->
-  <div class="logo-location">
-    <div class="logo_image">
-      <img src="assets/images/logo_black.png"  class="logo" href="#" height="80" width="80" alt="MyShop Logo"/>
+<header>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="#" class="nav-icon search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+        </svg>
+      </a>
     </div>
-  </div>
 
-  <!-- Middle: Search -->
-  <div class="search-bar">
-    <select>
-      <option>All</option>
-      <option>Electronics</option>
-      <option>Fashion</option>
-      <option>Books</option>
-    </select>
-    <input type="text" placeholder="Search MyShop">
-    <button>🔍</button>
-  </div>
+    <div class="nav-center">
+      <a href="#" class="nav-logo">
+        <span class="logo-main">NEXORA</span>
+        <span class="logo-sub">NATURE</span>
+      </a>
+    </div>
 
-  <!-- Right: Menu -->
-  <div class="menu">
-    <a routerLink="/login">Hello, sign in<br><strong>Account & Lists</strong></a>
-    <a routerLink="/returns"><span>Returns</span><br><strong>& Orders</strong></a>
-    <a routerLink="/cart" class="cart">
-      🛒 Cart
-      <span class="count" *ngIf="cartCount > 0">{{ cartCount }}</span>
-    </a>
-  </div>
+    <div class="nav-right">
+      <a href="#" class="nav-icon user-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+        </svg>
+      </a>
+      <a href="#" class="nav-icon cart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+</svg>
+      </a>
+    </div>
+  </nav>
+
+  <nav class="sub-nav">
+    <ul class="nav-links">
+      <li><a href="#">SHOP ALL</a></li>
+      <li><a href="#" class="highlight">OFFERS</a></li>
+      <li><a href="#">UNEAKO</a></li>
+      <li><a href="#">KORIEN-CREAM</a></li>
+      <li><a href="#">KIMCHI</a></li>
+      <li><a href="#">FASHION</a></li>
+      <li><a href="#">MEN</a></li>
+      <li><a href="#">ROUTINES</a></li>
+      <li><a href="#" class="highlight">GIFTING</a></li>
+      <li><a href="#">LEARN</a></li>
+      <li><a href="#">SHOP BY CONCERN</a></li>
+    </ul>
+  </nav>
 </header>

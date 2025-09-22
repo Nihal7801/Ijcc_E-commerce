@@ -12,9 +12,11 @@ import { ProductComponent } from './component/product/product.component';
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 import { SignInComponent } from './component/sign-in/sign-in.component';
 import { UneakoComponent } from './ product/uneako/uneako.component';
+// import { UneakoComponent } from './component/product/uneako/uneako.component';
 
-// ✅ Fixed path (no space, correct folder)
-
+// ✅ Admin components
+// import { CategoriesComponent } from './component/admin/categories/categories.component';
+// import { CategoryFormComponent } from './component/admin/category-form/category-form.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },       // Default Home
@@ -30,6 +32,11 @@ const routes: Routes = [
   // ✅ Generic Products
   { path: 'products', component: ProductComponent },              // product listing
   { path: 'products/:id', component: ProductDetailComponent },    // product detail
+
+  // ✅ Admin Routes
+  // { path: 'admin/categories', component: CategoriesComponent },
+  // { path: 'admin/categories/add', component: CategoryFormComponent },
+  // { path: 'admin/categories/:id', component: CategoryFormComponent },
 
   // Wildcard -> Home
   { path: '**', redirectTo: '' }

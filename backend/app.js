@@ -1,24 +1,52 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const app = express();
-const port = 3000;
-const categoryRoutes = require("./routes/category")
+const cors = require("cors");
+require("dotenv").config();
 
-app.use(express.json()); // es line ki help se ham json formate me data ko server me bhej payenge
+const app = express();
+
+// Middleware
+app.use(express.json());
+app.use(cors());
+
+// Routes
+const categoryRoutes = require("./routes/category");
+app.use("/api/category", categoryRoutes);
+
+// Default Route
 app.get("/", (req, res) => {
-    res.send("Hello Nihal, Server running");
+    res.send("Hello Nihal, Server running 🚀");
 });
 
-app.use("/category",categoryRoutes);
-async function connectDb() {
-    await mongoose.connect("mongodb://localhost:27017", {
-        dbName: "IJCC-store"
-    });
-}
-connectDb().catch((err) => {
-    console.error(err);
-})
+// Product route
+const productRoutes = require("./routes/product");
+app.use("/api/product", productRoutes);
 
-app.listen(port, () => {
-    console.log("server running on port", port);
+// cart route
+const cartRoutes = require("./routes/cart");
+app.use("/api/cart", cartRoutes);
+
+// user routes
+const userRoutes = require("./routes/user");
+app.use("/api/user", userRoutes);
+
+
+// Database Connection
+async function connectDb() {
+    try {
+        await mongoose.connect(process.env.MONGO_URI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
+        console.log("✅ MongoDB connected successfully");
+    } catch (err) {
+        console.error("❌ MongoDB connection failed:", err.message);
+    }
+}
+connectDb();
+
+// Start Server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`🚀 Server running on port ${PORT}`);
 });

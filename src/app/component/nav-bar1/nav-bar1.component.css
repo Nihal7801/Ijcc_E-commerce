@@ -1,4 +1,4 @@
-/* Reset */
+Reset
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;      /* Vertically center items */
   justify-content: space-between;
-  background:lightblue;
+  /* background:lightblue; */
   color:black;
   padding: 15px;
   margin-top: -8px;
@@ -47,23 +47,24 @@ body {
   max-width: 600px;
   border-radius: 20px;
   overflow: hidden;
-  background: #fff;
+  background:white;
 }
 
 .search-bar select {
   padding: 8px;
   border: none;
-  background: #f3f3f3;
+  background: lightblue;
 }
 
 .search-bar input {
   flex: 1;
   padding: 8px;
   border: none;
+  background: lightblue;
 }
 
 .search-bar button {
-  background: #febd69;
+  background:lightblue;
   border: none;
   padding: 8px 15px;
   cursor: pointer;
@@ -121,4 +122,99 @@ body {
     margin-top: 10px;
     text-align: center;
   }
+}
+
+
+/* new css */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-icon:hover {
+  color: #000;
+}
+
+.nav-logo {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.logo-main {
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.logo-sub {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  margin-top: -5px;
+}
+
+.sub-nav {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-links li a:hover {
+  color: #000;
+}
+
+.nav-links li a.highlight {
+  border-bottom: 1px solid #000;
 }
